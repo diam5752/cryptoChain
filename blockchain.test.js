@@ -120,6 +120,7 @@ describe('replaceChain()', () =>{
  
                 blockchain.replaceChain(newChain.chain);
             });
+            
             it('does not replace the chain', () => {
                 expect(blockchain.chain).toEqual(originalChain);
             });
@@ -141,7 +142,7 @@ describe('replaceChain()', () =>{
             it('logs about the chain replacement', () => {
                 expect(logMock).toHaveBeenCalled();
             });
-        })
+        });
     });
 });
 
